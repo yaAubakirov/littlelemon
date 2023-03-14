@@ -14,5 +14,6 @@ extension Color {
     static let primaryTwo = Color("PrimaryTwo")
     static let secondaryOne = Color("SecondaryOne")
     static let secondaryTwo = Color("SecondaryTwo")
-    static let highlight = Color("Highlight")
+    static let highlightOne = Color("HighlightOne")
+    static let highlightTwo = Color("HighlightTwo")
 }

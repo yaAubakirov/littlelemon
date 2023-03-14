@@ -9,12 +9,13 @@ import SwiftUI
 
 struct Menu: View {
     var body: some View {
-        VStack {
-            Text("Little Lemon")
-            Text("Chicago")
-            Text("Little Lemon is a charming neighborhood bistro thatserves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.")
+        NavigationStack {
+            ScrollView(showsIndicators: false) {
+                Hero()
+                DishTypeSelector()
+            }
+            .edgesIgnoringSafeArea(.top)
         }
-        .padding(20)
     }
 }
 

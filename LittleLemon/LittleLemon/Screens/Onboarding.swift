@@ -44,19 +44,19 @@ struct Onboarding: View {
                         TextField("First name", text: $firstName)
                             .disableAutocorrection(true)
                     }
-                    .listRowBackground(Color.highlight)
+                    .listRowBackground(Color.highlightOne)
                     .disableAutocorrection(true)
                     Section {
                         TextField("Last name", text: $lastName)
                             .disableAutocorrection(true)
                     }
-                    .listRowBackground(Color.highlight)
+                    .listRowBackground(Color.highlightOne)
                     .disableAutocorrection(true)
                     Section {
                         TextField("Email", text: $email)
                             .textInputAutocapitalization(.never)
                     }
-                    .listRowBackground(Color.highlight)
+                    .listRowBackground(Color.highlightOne)
                     .disableAutocorrection(true)
                     Section {
                         Button {
@@ -79,7 +79,7 @@ struct Onboarding: View {
                             }
                         } label: {
                             Text("Register")
-                                .foregroundColor(Color.highlight)
+                                .foregroundColor(Color.highlightOne)
                                 .frame(maxWidth: .infinity, alignment: .center)
                         }
                         .alert(isPresented: $alertIsPresented) {

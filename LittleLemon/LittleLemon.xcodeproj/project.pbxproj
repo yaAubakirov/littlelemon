@@ -21,6 +21,10 @@
 		4460C3F229BE347700D4D3BA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460C3F129BE347700D4D3BA /* Home.swift */; };
 		4460C3F429BE359100D4D3BA /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460C3F329BE359100D4D3BA /* Menu.swift */; };
 		4460C3F629BFA50600D4D3BA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460C3F529BFA50600D4D3BA /* UserProfile.swift */; };
+		44FAB34D29C0F85F005D7A8A /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAB34C29C0F85F005D7A8A /* Hero.swift */; };
+		44FAB35029C0F928005D7A8A /* DishType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAB34F29C0F928005D7A8A /* DishType.swift */; };
+		44FAB35229C0FD45005D7A8A /* DishTypeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAB35129C0FD45005D7A8A /* DishTypeSelector.swift */; };
+		44FAB35429C0FD9B005D7A8A /* DishTypeSelectorElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAB35329C0FD9B005D7A8A /* DishTypeSelectorElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		4460C3F129BE347700D4D3BA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4460C3F329BE359100D4D3BA /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		4460C3F529BFA50600D4D3BA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		44FAB34C29C0F85F005D7A8A /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		44FAB34F29C0F928005D7A8A /* DishType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishType.swift; sourceTree = "<group>"; };
+		44FAB35129C0FD45005D7A8A /* DishTypeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishTypeSelector.swift; sourceTree = "<group>"; };
+		44FAB35329C0FD9B005D7A8A /* DishTypeSelectorElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishTypeSelectorElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,8 @@
 				4460C3E629BE093E00D4D3BA /* Data */,
 				4460C3E129BE087700D4D3BA /* Protocols */,
 				4460C3F029BE343E00D4D3BA /* Screens */,
-				4460C3EE29BE2ABE00D4D3BA /* Design.swift */,
-				4460C3E929BE0AE500D4D3BA /* UserConst.swift */,
+				44FAB34B29C0F84D005D7A8A /* Components */,
+				44FAB34E29C0F90B005D7A8A /* Helpers */,
 				4460C3D529BDF7C700D4D3BA /* Assets.xcassets */,
 				4460C3D729BDF7C700D4D3BA /* Preview Content */,
 			);
@@ -127,6 +135,26 @@
 				4460C3F529BFA50600D4D3BA /* UserProfile.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		44FAB34B29C0F84D005D7A8A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				44FAB34C29C0F85F005D7A8A /* Hero.swift */,
+				44FAB35129C0FD45005D7A8A /* DishTypeSelector.swift */,
+				44FAB35329C0FD9B005D7A8A /* DishTypeSelectorElement.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		44FAB34E29C0F90B005D7A8A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4460C3EE29BE2ABE00D4D3BA /* Design.swift */,
+				4460C3E929BE0AE500D4D3BA /* UserConst.swift */,
+				44FAB34F29C0F928005D7A8A /* DishType.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FAB35229C0FD45005D7A8A /* DishTypeSelector.swift in Sources */,
 				4460C3EF29BE2ABE00D4D3BA /* Design.swift in Sources */,
 				4460C3E329BE088E00D4D3BA /* UserStorageProtocol.swift in Sources */,
 				4460C3F229BE347700D4D3BA /* Home.swift in Sources */,
+				44FAB35029C0F928005D7A8A /* DishType.swift in Sources */,
 				4460C3EA29BE0AE500D4D3BA /* UserConst.swift in Sources */,
 				4460C3E029BE05D100D4D3BA /* Onboarding.swift in Sources */,
 				4460C3F429BE359100D4D3BA /* Menu.swift in Sources */,
@@ -210,6 +240,8 @@
 				4460C3F629BFA50600D4D3BA /* UserProfile.swift in Sources */,
 				4460C3D429BDF7C600D4D3BA /* ContentView.swift in Sources */,
 				4460C3E529BE08AC00D4D3BA /* UserProtocol.swift in Sources */,
+				44FAB35429C0FD9B005D7A8A /* DishTypeSelectorElement.swift in Sources */,
+				44FAB34D29C0F85F005D7A8A /* Hero.swift in Sources */,
 				4460C3D229BDF7C600D4D3BA /* LittleLemonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +374,7 @@
 				DEVELOPMENT_TEAM = XLZ82945UH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittleLemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -371,6 +404,7 @@
 				DEVELOPMENT_TEAM = XLZ82945UH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittleLemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
