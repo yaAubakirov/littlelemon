@@ -8,17 +8,36 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @EnvironmentObject var menu: MenuVM
+    
+    @State private var tabSelection = 1
+    
     var body: some View {
-        TabView {
-            Menu()
+        TabView(selection: $tabSelection) {
+            Menu(tabSelection: $tabSelection)
+                .environmentObject(menu)
                 .tabItem({
                     Label("Menu", systemImage: "list.dash")
                 })
-            
-            UserProfile()
+                .tag(1)
+            UserProfile(tabSelection: $tabSelection)
                 .tabItem({
-                    Label("User Profile", systemImage: "square.and.pencil")
+                    Label("User Profile", systemImage: "person")
                 })
+                .tag(2)
+            Cart(tabSelection: $tabSelection)
+                .environmentObject(menu)
+                .tabItem {
+                    Label("Cart", systemImage: "cart")
+                }
+                .badge(menu.basket?.getQtyOfBusket() ?? 0)
+                .tag(3)
+        }
+        .onAppear {
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithDefaultBackground()
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
         }
     }
 }
@@ -26,5 +45,6 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
+            .environmentObject(MenuVM())
     }
 }

@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct LittleLemonApp: App {
+    
+    var menu = MenuVM()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(self.menu)
         }
     }
 }

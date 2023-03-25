@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct DishTypeSelector: View {
+    
+    @Binding var currentSelector: DishType?
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 Rectangle()
                     .opacity(0)
                 ForEach(DishType.allCases, id: \.self) { dish in
-                    DishTypeSelectorElement(dishType: dish)
+                    DishTypeSelectorElement(dishType: dish, currentSelector: $currentSelector)
                 }
                 Rectangle()
                     .opacity(0)
@@ -25,6 +28,6 @@ struct DishTypeSelector: View {
 
 struct DishTypeSelector_Previews: PreviewProvider {
     static var previews: some View {
-        DishTypeSelector()
+        DishTypeSelector(currentSelector: .constant(.Desserts))
     }
 }

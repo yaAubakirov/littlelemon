@@ -18,7 +18,6 @@ struct Hero: View {
                         .font(.system(size: 36, weight: .bold, design: .default))
                     Spacer()
                 }
-                .padding(.top, 56)
                 HStack {
                     VStack {
                         HStack {

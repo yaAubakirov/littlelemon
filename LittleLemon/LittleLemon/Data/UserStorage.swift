@@ -29,6 +29,10 @@ class UserStorage: UserStorageProtocol {
         UserDefaults.standard.set(true, forKey: "kUserLogged")
     }
     
+    static func logOutUser() {
+        UserDefaults.resetStandardUserDefaults()
+    }
+    
     static func isUserLogged() -> Bool {
         UserDefaults.standard.bool(forKey: "kUserLogged")
     }

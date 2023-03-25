@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var menu: MenuVM
+    
     @State var isLoggedIn: Bool
     
     init() {
         let loggingStatus = UserStorage.isUserLogged()
         self._isLoggedIn = State(initialValue: loggingStatus)
     }
+    
     var body: some View {
         NavigationStack {
             if !isLoggedIn {
                 Onboarding(isLoggedIn: $isLoggedIn)
             } else {
                 Home()
+                    .environmentObject(menu)
             }
         }
     }
