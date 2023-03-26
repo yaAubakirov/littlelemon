@@ -1,0 +1,22 @@
+{ 
+  "menuList": [ 
+    { 
+      "title": "Greek Salad", 
+      "amount": 12.99, 
+      "highlight": "Our delicious salad is served with Feta cheese and peeled cucumber. Includes tomatoes, onions, olives, salt and oregano in the ingredients.", 
+      "thumbnail": "greekSalad.jpg", 
+    }, 
+    { 
+      "title": "Bruschetta", 
+      "amount ": 7.99, 
+      "highlight ": "Delicious grilled bread rubbed with garlic and topped with olive oil and salt. Our Bruschetta includes tomato and cheese.", 
+      "thumbnail": "bruschetta.jpg" 
+    }, 
+    { 
+      "title": "Grilled Fish", 
+      "amount ": 20.00, 
+      "highlight": "Fantastic grilled fish seasoned with salt.", 
+      "thumbnail": "grilledFish.jpg" 
+    } 
+  ] 
+} 
